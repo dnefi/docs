@@ -23,29 +23,26 @@ Error messages contain a message. An example response is like this:
 
 Below is a list of error messages:
 
-| Message content | Status code | Description                                                       |
-| --------------- | ----------- | ----------------------------------------------------------------- |
-| Invalid Server  | 400         | Indicates that you sent the request to the wrong gateway address. |
-|                 |             |                                                                   |
-
-- \*\*Invalid Server: \*\*Status code is **400**. Indicates that you sent the request to the wrong gateway address.
-- **Invalid URL:** Status code is **400**. Indicates that you sent the request to the wrong gateway URL.
-- \*\*Invalid Path: \*\*Status code is **400**. Indicates that you sent the request to the wrong gateway path.
-- \*\*Invalid Endpoint: \*\*Status code is **400**. Indicates that you sent the request to the wrong gateway endpoint.
-- \*\*Unauthorized: \*\*Status code is **401**. Indicates that you are sending an unauthorized request. You must include the API key in your request.
-- \*\*Invalid API Key: \*\*Status code is **401**. Indicates that you sent an invalid API key. Check that you sent a valid API key.
-- \*\*Subscription Not Found: \*\*Status code is **401**. Indicates that you have no active subscriptions for the current API. Please check if you have a valid subscription.
-- **Not Enough Credits**: Status code is **402**. Indicates that the credits on your API plan have been exhausted. You may consider renewing your plan or upgrading to a higher plan.
-- **Insufficient Balance**: Status code is **402**. Indicates that you do not have sufficient funds to fulfill the request. You may consider adding balance to your account.
-- \*\*Your API Key is not available on this API: \*\*Status code is **403**. It indicates that the API key you are using is restricted for the API to which you are sending the request.
-- **User Blocked:** Status code is \*\*403. \*\*Indicates that your account is blocked.
-- **Not Found:** Status code is **404**. Indicates that you sent a request to an address that does not exist.
-- \*\*API Not Found: \*\*Status code is **404**. Indicates that you are sending a request to an API address that does not exist.
-- \*\*Endpoint Not Found: \*\*Status code is **404**. Indicates that you are sending a request to an endpoint address that does not exist.
-- **Method Not Allowed:** Status code is **405**. Indicates that you are sending an unsupported request method. The gateway currently only supports GET, POST, PUT, PATCH, DELETE methods.
-- \*\*API Gateway Error: \*\*Status code is **500**. Indicates that the API provider does not configure the API.
-- **Server Timeout:** Status code is **500**. Indicates that the API request has timed out. Currently the gateway supports a maximum delay of 90 seconds.
-- \*\*Server Error: \*\*Status code is **500**. Indicates that an unknown error has occurred due to the target API server.
-- **Invalid Response Code**: Status code is **500**. Indicates that the target API server returned an unsupported response status code.
-- \*\*Bad Response: \*\*Status code is **500**. Indicates that the target API server returned an unsupported response body.
-- **Target Server Error:** Status code is **500**. Indicates that the target servers specified by the API provider are invalid.
+| Message content                           | Status code | Description                                                                                                                           |
+| ----------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Invalid Server                            | 400         | The request was sent to the wrong gateway address.                                                                                    |
+| Invalid URL                               | 400         | The request was sent to the wrong gateway URL.                                                                                        |
+| Invalid Path                              | 400         | The request was sent to the wrong gateway path.                                                                                       |
+| Invalid Endpoint                          | 400         | The request was sent to the wrong gateway endpoint.                                                                                   |
+| Unauthorized                              | 401         | You've sent an unauthorized request. You must include the API key in your request.                                                    |
+| Invalid API Key                           | 401         | You have submitted an invalid API key. You must submit a valid API key.                                                               |
+| Subscription Not Found                    | 401         | You do not have an active subscription for the current API. Please check if you have a valid subscription.                            |
+| Not Enough Credits                        | 402         | Your API plan has run out of credits. Renew your plan or upgrade to a higher plan.                                                    |
+| Insufficient Balance                      | 402         | You don't have enough funds to fulfill the request. Add funds to your account. Use the auto top-up feature for a smoother experience. |
+| Your API Key is not available on this API | 403         | The API key you are using for the API you are sending the request to is restricted.                                                   |
+| User Blocked                              | 403         | Your account has been blocked.                                                                                                        |
+| Not Found                                 | 404         | You sent a request to an address that does not exist.                                                                                 |
+| API Not Found                             | 404         | You sent a request to an API address that does not exist.                                                                             |
+| Endpoint Not Found                        | 404         | You sent a request to an endpoint address that does not exist.                                                                        |
+| Method Not Allowed                        | 405         | You used an unsupported request method.  The gateway currently only supports GET, POST, PUT, PATCH, DELETE methods.                   |
+| API Gateway Error                         | 500         | The API provider did not configure the API correctly.                                                                                 |
+| Server Timeout                            | 500         | The API request timed out. The gateway currently supports a maximum delay of 90 seconds.                                              |
+| Server Error                              | 500         | An unknown error occurred due to the target API server.                                                                               |
+| Invalid Response Code                     | 500         | The target API server returned an unsupported response status code.                                                                   |
+| Bad Response                              | 500         | The target API server returned an unsupported response body.                                                                          |
+| Target Server Error                       | 500         | The target servers specified by the API provider are invalid.                                                                         |
