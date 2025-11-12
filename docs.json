@@ -12,27 +12,13 @@
     "tabs": [
       {
         "tab": "Guides",
-          "menu": [
-          {
-            "item": "API reference",
-            "groups": [
-              {
-                "group": "Core endpoints",
-                "pages": [
-                  "api-reference/get",
-                  "api-reference/post",
-                  "api-reference/delete"
-                ]
-              }
-            ]
-          }
-          ],
         "groups": [
           {
             "group": "API Studio",
             "pages": [
               "studio/creating-new-api",
-              "studio/api-targeting"
+              "studio/api-targeting",
+              "studio/adjusting-credit-usage"
             ]
           },
           {
