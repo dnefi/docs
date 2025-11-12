@@ -45,7 +45,7 @@
           {
             "group": "API Gateway",
             "pages": [
-              "gateway/responses-generated-by-gateway"
+              "gateway/gateway-generated-responses"
             ]
           }
         ]
