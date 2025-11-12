@@ -33,14 +33,6 @@
             "pages": [
               "studio/creating-new-api",
               "studio/api-targeting"
-            ],
-            "groups": [
-              {
-                "group": "Gateway",
-                "pages": [
-                  "gateway/responses-generated-by-gateway"
-                ]
-              }
             ]
           },
           {
@@ -53,10 +45,7 @@
           {
             "group": "API Gateway",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "gateway/responses-generated-by-gateway"
             ]
           }
         ]
