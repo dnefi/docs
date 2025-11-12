@@ -27,7 +27,7 @@
             "group": "API Consumers",
             "pages": [
               "consumers/api-keys",
-              "consumers/credit-usage",
+              "credit-usage",
               "consumers/response-headers"
             ]
           },
