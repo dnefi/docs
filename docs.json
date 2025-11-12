@@ -59,11 +59,6 @@
           "anchor": "Marketplace",
           "href": "https://jojapi.com/marketplace",
           "icon": "layer-group"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
