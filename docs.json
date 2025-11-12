@@ -18,6 +18,14 @@
             "pages": [
               "studio/creating-new-api",
               "studio/api-targeting"
+            ],
+            "groups": [
+              {
+                "group": "Gateway",
+                "pages": [
+                  "gateway/responses-generated-by-gateway"
+                ]
+              }
             ]
           },
           {
