@@ -16,10 +16,8 @@
           {
             "group": "API Studio",
             "pages": [
-              "index",
-              "quickstart",
-              "development",
-              "studio/creating-new-api"
+              "studio/creating-new-api",
+              "studio/api-targeting"
             ]
           },
           {
