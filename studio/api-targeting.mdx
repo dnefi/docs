@@ -1,0 +1,14 @@
+---
+title: "API Targeting"
+description: "Learn how to use your API server."
+---
+
+After creating an API, you need to enter the server information on which you are serving your API. Our system acts like a reverse proxy. So your server is not visible to API users, but API requests are processed by our system on your servers. Follow the steps below to define the target information for the system proxy.
+
+1. First, open your **API in Studio**.
+2. Go to the **Target** tab.
+
+   ![Ss 2024 06 23 03 14 44 2048x714 Pn](/images/ss-2024-06-23-03.14.44-2048x714.png)
+3. There are two sections here. First section is **Root URLs**. You can enter as many target servers/addresses as you want in this section. If you enter more than one URL, the system will randomly share API requests among your servers. This way, you can **load balance** by entering more than one server address.
+4. Your destination address may have http or https protocol. Both are supported. However, please note that the consumption URL that will be provided to API users by our system is presented as **https**.
+5. Second section is **Secret Headers**. The headers you add in this section will be permanently sent to your server by our system with every request sent by users. You can use these headers for identification or security purposes. These headers are not visible to API consumers.
