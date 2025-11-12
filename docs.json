@@ -38,6 +38,7 @@
           {
             "group": "API Consumers",
             "pages": [
+              "consumers/credit-usage",
               "consumers/response-headers"
             ]
           },

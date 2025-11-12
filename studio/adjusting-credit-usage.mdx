@@ -1,0 +1,37 @@
+---
+title: "Adjusting Credit Usage"
+---
+
+> This article is for API providers. For more information on using credits as an API consumer, check out [this article](/consumers/credit-usage).
+
+In the JoJ API you can set the amount of credits to be spent for each request.
+
+## **1. Fixed credit usage**
+
+To do this, you first need to specify the maximum number of credits per request from the endpoint details in Studio. This amount is displayed to API consumers and is determined as the maximum amount by our gateway. You cannot specify more credit spending than this amount in any request. This is convenient for you to set different pricing between different endpoints.
+
+By default, requests with a request code of 5xx are considered unsuccessful and no credits are spent.
+
+### **Set up custom credit spending**
+
+To specify a credit spend for a request, you need to return a header in your side. For example, if you want 3 credits to be spent, you would return a header like this:
+
+```
+X-Jojapi-Credits-Used: 3
+```
+
+The header value must be an integer value only and must be less than or equal to the amount you specify in the Studio (and must not be less than zero). Headers that are not sent correctly are ignored by the gateway.
+
+#### **Adjusting credit in Server-Sent Events (SSE) responses**
+
+To determine credit usage in [<u>SSE responses</u>](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) (must be `content-type: text/event-stream`), you can send a message like the following.
+
+```
+data: {"x-jojapi-credits-used": 3}
+```
+
+The credit value you specify here has the same rules as the value sent with the header. In cases where both the header and the SSE message are sent, our API Gateway will consider the SSE message and the header will be ignored.
+
+## **2. Flexible credit usage**
+
+Flexible credit usage is useful in cases where credit consumption is directly dependent on the content of the API response. In flexible pricing, there is no upper credit limit, and you can allocate as many credits to users as you wish. To do this, you must send the `X-Jojapi-Credits-Used` header or SSE message from your side. The value you send must not be less than zero.

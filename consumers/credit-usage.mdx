@@ -1,0 +1,20 @@
+---
+title: "Credit Usage"
+description: "Description of your new file."
+---
+
+In JoJ API, each API request has a specified credit amount. This amount can be different for each endpoint and is determined by the API provider. The credit amount set for each endpoint can be changed at any time by the API provider without notice. However, as an API consumer, you can track how much credit you have spent for each request in real time. For this, a header is added to each API request by our gateway:
+
+```
+X-Jojapi-Credits-Used
+```
+
+Additionally, by default, requests with a status code of 5xx are treated as failed requests by our gateway and do not consume any credits.
+
+However, the API provider can adjust how much credit is spent on a request, whether or not it has a 5xx status code.
+
+## **Example**
+
+![Image 1 E1725358464261 Pn](/images/image-1-e1725358464261.png)
+
+For the endpoint shown in the image, the API provider has set a maximum of 5 credits per request. This means that a maximum of 5 credits will be spent per request. However, depending on the API provider, less than 5 credits (4, 3, 2, 1 or 0) may be spent. For example, the API provider may configure the API to spend 1 credit for each result you get based on your search query. If you are an API provider and don’t know how to do it, check out [this article](/studio/adjusting-credit-usage).
