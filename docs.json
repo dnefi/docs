@@ -56,9 +56,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Marketplace",
+          "href": "https://jojapi.com/marketplace",
+          "icon": "layer-group"
         },
         {
           "anchor": "Blog",
