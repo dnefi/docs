@@ -19,12 +19,14 @@
               "studio/creating-new-api",
               "studio/api-targeting",
               "studio/adjusting-credit-usage",
+              "studio/custom-users",
               "studio/provider-earnings"
             ]
           },
           {
             "group": "API Consumers",
             "pages": [
+              "consumers/api-keys",
               "consumers/credit-usage",
               "consumers/response-headers"
             ]

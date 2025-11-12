@@ -1,0 +1,55 @@
+---
+title: "Using JoJ API Keys"
+---
+
+JoJ API Keys provide secure access to APIs listed on the JoJ API Marketplace, allowing you to integrate these APIs into your software and applications. You can [<u>manage your API keys</u>](https://jojapi.com/api-keys) — including creating new keys, deleting existing ones, or assigning custom names for easier organization.
+
+JoJ API supports multiple authentication methods using your API keys. Below are the available options, along with brief explanations and usage examples:
+
+### **1. X-JoJAPI-Key Header**
+
+Send your API key via the custom `X-JoJAPI-Key` HTTP header.
+
+**Example:**
+
+```
+X-JoJAPI-Key: YOUR_API_KEY
+```
+
+### **2. Authorization Header**
+
+Pass your API key directly through the `Authorization` header without any prefix.
+
+**Example:**
+
+```
+Authorization: YOUR_API_KEY
+```
+
+### **3. Bearer Token**
+
+Use the `Authorization` header with the `Bearer` scheme followed by your API key.
+
+**Example:**
+
+```
+Authorization: Bearer YOUR_API_KEY
+```
+
+### **4. Basic Token**
+
+Send your API key using HTTP Basic Authentication. The `Authorization` header should contain the word `Basic`, followed by a base64-encoded string of `apikey:apikey`.
+
+**Example:**
+
+```
+Authorization: Basic BASE64_ENCODED_APIKEY
+```
+
+> **Note:**\
+> To encode:\
+> `echo -n "YOUR_API_KEY:YOUR_API_KEY" | base64`
+
+## **📌 Notes:**
+
+- Replace `YOUR_API_KEY` with your actual API key.
