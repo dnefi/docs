@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "JoJ API Documentation",
   "colors": {
-    "primary": "#2872fa",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4A81ED",
+    "light": "#74C2F2",
+    "dark": "#0B4DBF"
   },
   "favicon": "/favicon.svg",
   "navigation": {
