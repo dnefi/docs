@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "JoJ API Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -14,11 +14,12 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Studio",
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "development",
+              "studio/creating-new-api"
             ]
           },
           {
@@ -49,23 +50,7 @@
       },
       {
         "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
+        "groups": []
       }
     ],
     "global": {
@@ -102,15 +87,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
