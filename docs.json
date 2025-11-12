@@ -38,8 +38,7 @@
           {
             "group": "API Consumers",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "consumers/response-headers"
             ]
           },
           {
