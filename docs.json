@@ -39,6 +39,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Legal",
+        "groups": [
+          {
+            "group": "Legal",
+            "pages": [
+              "tos"
+            ]
+          }
+        ]
       }
     ],
     "global": {
